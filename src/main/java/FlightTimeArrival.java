@@ -11,7 +11,9 @@ public class FlightTimeArrival {
             System.exit(-1);
         }
         Job job = Job.getInstance();
+        job.setJarByClass(FlightTimeArrival.class);
+        job.setJobName("FlightTimeArrival");
+        FileInputFormat.addInputPath(job, );
 
     }
 }
-ÍÍÍÍЫЫ

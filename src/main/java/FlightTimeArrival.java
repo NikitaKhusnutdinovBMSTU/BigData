@@ -13,7 +13,7 @@ public class FlightTimeArrival {
         Job job = Job.getInstance();
         job.setJarByClass(FlightTimeArrival.class);
         job.setJobName("FlightTimeArrival");
-        FileInputFormat.addInputPath(job, "664600583_T_ONTIME_sample.csv");
+        FileInputFormat.addInputPath(job, );
 
     }
 }

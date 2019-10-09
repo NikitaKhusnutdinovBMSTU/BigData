@@ -1,3 +1,5 @@
+package khusnutdinov.bmstu.lab2;
+
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.*;
 import org.apache.hadoop.mapreduce.Job;
@@ -16,5 +18,6 @@ public class FlightTimeArrival {
             System.exit(-1);
         }
         Job job = Job.getInstance();
+        job.setJobName("");
     }
 }

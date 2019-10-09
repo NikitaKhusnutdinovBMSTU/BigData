@@ -13,7 +13,7 @@ public class FlightTimeArrival {
         Job job = Job.getInstance();
         job.setJarByClass(FlightTimeArrival.class);
         job.setJobName("FlightTimeArrival");
-        FileInputFormat.addInputPath(job, new Path("~/Desktop/hadoop/labs/2/"));
+        FileInputFormat.addInputPath(job, new Path("~/Desktop/hadoop/labs/2/664600583_T_ONTIME_sample.csv"));
 
     }
 }

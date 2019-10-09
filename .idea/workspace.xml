@@ -23,13 +23,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="14" />
-          <entry key="java" value="4681" />
+          <entry key="java" value="4685" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4681" />
+          <entry key="JAVA" value="4685" />
           <entry key="PLAIN_TEXT" value="14" />
           <entry key="XML" value="2" />
         </counts>
@@ -74,8 +74,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightTimeArrivalReducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+            <state relative-caret-position="122">
+              <caret line="42" column="107" selection-start-line="42" selection-start-column="107" selection-end-line="42" selection-end-column="107" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -280,7 +280,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570623412352" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570624083111" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -352,12 +352,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570260923271</updated>
-      <workItem from="1570260927492" duration="13784000" />
+      <workItem from="1570260927492" duration="13800000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13784000" />
+    <option name="totallyTimeSpent" value="13800000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="443" width="1446" height="545" extended-state="0" />
@@ -491,8 +491,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightTimeArrivalReducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+        <state relative-caret-position="122">
+          <caret line="42" column="107" selection-start-line="42" selection-start-column="107" selection-end-line="42" selection-end-column="107" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

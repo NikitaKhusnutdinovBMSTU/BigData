@@ -8,6 +8,6 @@ public class AirportCSVWritable {
     private Pair<String, String> airPair;
 
     public AirportCSVWritable(String dataIn){
-        
+
     }
 }

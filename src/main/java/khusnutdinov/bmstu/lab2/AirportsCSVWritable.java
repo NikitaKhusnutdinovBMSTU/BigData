@@ -6,8 +6,12 @@ public class AirportsCSVWritable {
     private Pair<String, String> airCSVPair;
 
     public AirportsCSVWritable(String airportCSV){
-        String[] twoFoldColumn = airportCSV.split(" ");
-        this.airCSVPair = new Pair<>(twoFoldColumn[0], twoFoldColumn[1]);
+        int divide = airportCSV.indexOf(",");
+        this.airCSVPair = new Pair<>(airportCSV.substring(0, divide), airportCSV.substring(divide + 1, airportCSV.length() - 1));
+    }
+
+    public Pair<String, String> getAirportsPair(){
+        return airCSVPair;
     }
 
 }

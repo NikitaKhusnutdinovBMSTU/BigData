@@ -6,10 +6,10 @@ import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
-public class AirportCSVWritable {
+public class AirportsCSVWritable {
     private Pair<String, String> airPair;
 
-    public AirportCSVWritable(String dataIn){
+    public AirportsCSVWritable(String dataIn){
 
     }
 }

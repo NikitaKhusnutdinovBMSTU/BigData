@@ -18,6 +18,7 @@ public class FlightTimeArrival {
             System.exit(-1);
         }
         Job job = Job.getInstance();
-        job.setJobName("");
+        job.setJobName("Reduce side join");
+        
     }
 }

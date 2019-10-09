@@ -18,7 +18,7 @@ public class FlightsCSVWritable {
        this.csvFlightPair = new Pair<>(table[DEST_AIRPORT_ID_INDEX], table[FLIGHT_DELAY_INDEX]);
     }
 
-    public Pair<String, String> getAirportsCSVPair(){
+    public Pair<String, String> getFlightsCSVPair(){
         return csvFlightPair;
     }
 

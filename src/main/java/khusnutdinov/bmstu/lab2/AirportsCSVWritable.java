@@ -9,8 +9,8 @@ import java.io.IOException;
 public class AirportsCSVWritable {
     private Pair<String, String> airPair;
     private final static int END_OF_COLUMNS = 17;
-    private final static int
-    
+    private final static int AIR
+
     public AirportsCSVWritable(String dataIn){
 
     }

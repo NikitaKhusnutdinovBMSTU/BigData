@@ -15,6 +15,19 @@ public class AirportsCSVWritable {
     private Pair<String, String> csvDataPair;
 
     public AirportsCSVWritable(String dataIn){
-       
+       String[] table = dataIn.split(" ");
+       this.csvDataPair = new Pair<>(table[DEST_AIRPORT_ID_INDEX], table[FLIGHT_DELAY_INDEX]);
+    }
+
+    public Pair<String, String> getAirportsCSVPair(){
+        return csvDataPair;
+    }
+
+    public String getDestAirportID(){
+        return csvDataPair.getKey();
+    }
+
+    public String getFlightDelay(){
+        return csvDataPair.getValue();
     }
 }

@@ -7,7 +7,9 @@ import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 public class FlightTimeArrival {
-    private String PlaneCSVPath = "~/Desktop/hadoop/labs/2/664600583_T_ONTIME_sample.csv";
+    private final static String PlaneCSVPath = "~/Desktop/hadoop/labs/2/664600583_T_ONTIME_sample.csv";
+    private final static String AirportCSVPath = ""
+
     public static void main(String[] args) throws Exception {
         if (args.length != 1){
             System.err.println("Analysing time arrival of planes\nUsage: <output path>");
@@ -16,7 +18,8 @@ public class FlightTimeArrival {
         Job job = Job.getInstance();
         job.setJarByClass(FlightTimeArrival.class);
         job.setJobName("FlightTimeArrival");
-        MultipleInputs.addInputPath(job, new Path("~/Desktop/hadoop/labs/2/664600583_T_ONTIME_sample.csv"), TextInputFormat.class, null);
+        MultipleInputs.addInputPath(job, new Path(PlaneCSVPath), TextInputFormat.class, null);
+
 
     }
 }

@@ -9,8 +9,8 @@ import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 public class FlightTimeArrival {
-    private final static String PlanesCSVPath = "~/Desktop/hadoop/labs/2/664600583_T_ONTIME_sample.csv";
-    private final static String AirportsCSVPath = "~/Desktop/hadoop/labs/2/L_AIRPORT_ID.csv";
+    private final static String PLANES_CSV_PATH = "~/Desktop/hadoop/labs/2/664600583_T_ONTIME_sample.csv";
+    private final static String AIRPORT_CSV_PATH = "~/Desktop/hadoop/labs/2/L_AIRPORT_ID.csv";
 
     public static void main(String[] args) throws Exception {
         if (args.length != 1){
@@ -20,8 +20,8 @@ public class FlightTimeArrival {
         Job job = Job.getInstance();
         job.setJarByClass(FlightTimeArrival.class);
         job.setJobName("Reduce side join");
-        MultipleInputs.addInputPath(job, new Path(PlanesCSVPath), TextInputFormat.class, null);
-        MultipleInputs.addInputPath(job, new Path(AirportsCSVPath), TextInputFormat.class, null);
+        MultipleInputs.addInputPath(job, new Path(PLANES_CSV_PATH), TextInputFormat.class, null);
+        MultipleInputs.addInputPath(job, new Path(AIRPORT_CSV_PATH), TextInputFormat.class, null);
         FileOutputFormat.setOutputPath(job, new Path(args[0]));
     }
 }

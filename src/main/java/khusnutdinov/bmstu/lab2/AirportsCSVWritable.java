@@ -8,6 +8,7 @@ import java.io.IOException;
 
 public class AirportsCSVWritable {
     private Pair<String, String> airPair;
+    
 
     public AirportsCSVWritable(String dataIn){
 

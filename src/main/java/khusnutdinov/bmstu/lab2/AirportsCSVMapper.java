@@ -1,9 +1,11 @@
 package khusnutdinov.bmstu.lab2;
 
-public class AirportsCSVMapper {
-    
+import org.apache.hadoop.mapred.Mapper;
 
-    public AirportsCSVMapper(){
+public class AirportsCSVMapper extends Mapper{
+
+
+    public AirportsCSVMapper() {
 
     }
 }

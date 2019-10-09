@@ -11,9 +11,5 @@ import java.io.IOException;
 
 public class AirportsCSVMapper extends Mapper<LongWritable, Text, SharedKey, Text>{
 
-    @Override
-    public void map(LongWritable longWritable, Text text, OutputCollector<SharedKey, Text> outputCollector, Reporter reporter) throws IOException {
 
-    }
-    
 }

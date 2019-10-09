@@ -23,5 +23,11 @@ public class FlightTimeArrival {
         MultipleInputs.addInputPath(job, new Path(FLIGHTS_CSV_PATH), TextInputFormat.class, FlightsCSVMapper.class);
         MultipleInputs.addInputPath(job, new Path(AIRPORT_CSV_PATH), TextInputFormat.class, AirportsCSVMapper.class);
         FileOutputFormat.setOutputPath(job, new Path(args[0]));
+        // написание компараторов и reduceSideJoin
+
+        job.setOutputKeyClass(Text.class);
+        job.setOutputValueClass(Text.class);
+        job.setNumReduceTasks(2);
+        System.exit(job.waitForCompletion(true) ? 0 : 1);
     }
 }

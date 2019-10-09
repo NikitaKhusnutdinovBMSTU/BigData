@@ -2,11 +2,13 @@ package khusnutdinov.bmstu.lab2;
 
 /*ключ, который мы будем использовать для reduce side join (0 - это аэропорт, 1 - это перелет) */
 
+import org.apache.hadoop.io.WritableComparable;
+
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
-public class SharedKey {
+public class SharedKey implements WritableComparable<SharedKey> {
     private String airportID;
     private int flag;
 

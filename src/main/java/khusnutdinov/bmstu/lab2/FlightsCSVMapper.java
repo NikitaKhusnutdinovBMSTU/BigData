@@ -1,4 +1,4 @@
 package khusnutdinov.bmstu.lab2;
 
-public class FlightsCSVMapper {
+public class FlightsCSVMapper extend Mapper<LongWritable,> {
 }

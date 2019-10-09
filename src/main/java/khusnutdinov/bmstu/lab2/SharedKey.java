@@ -1,12 +1,13 @@
 package khusnutdinov.bmstu.lab2;
 
-/*ключ, который мы будем использовать для reduce side join (0 - это аэропорт, 1 - это перелет) */
 
 import org.apache.hadoop.io.WritableComparable;
 
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
+
+/*ключ, который мы будем использовать для reduce side join (0 - это аэропорт, 1 - это перелет) */
 
 public class SharedKey implements WritableComparable<SharedKey> {
     private String airportID;
@@ -28,7 +29,7 @@ public class SharedKey implements WritableComparable<SharedKey> {
         dataOutput.writeInt(flag);
     }
 
-    public void read(DataInput dataInput) throws IOException{
+    public void readFields(DataInput dataInput) throws IOException{
         String stringLine = dataInput.readLine();
         int sizeLine = stringLine.length();
         // считываем флаг

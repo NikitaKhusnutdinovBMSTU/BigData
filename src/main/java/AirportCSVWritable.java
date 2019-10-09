@@ -6,4 +6,8 @@ import java.io.IOException;
 
 public class AirportCSVWritable {
     private Pair<String, String> airPair;
+
+    public AirportCSVWritable(String dataIn){
+        
+    }
 }

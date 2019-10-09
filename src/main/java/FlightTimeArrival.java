@@ -19,6 +19,7 @@ public class FlightTimeArrival {
         job.setJarByClass(FlightTimeArrival.class);
         job.setJobName("FlightTimeArrival");
         MultipleInputs.addInputPath(job, new Path(PlaneCSVPath), TextInputFormat.class, null);
+        MultipleInputs.addInputPath(job, new Path(AirportCSVPath), TextInputFormat.class, null);
 
 
     }

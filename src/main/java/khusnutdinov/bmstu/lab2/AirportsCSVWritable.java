@@ -15,6 +15,6 @@ public class AirportsCSVWritable {
     private Pair<String, String> csvDataPair;
 
     public AirportsCSVWritable(String dataIn){
-        System.out.println(dataIn);
+       
     }
 }

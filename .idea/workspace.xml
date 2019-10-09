@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25311b3f-1c97-4512-b1c3-b516fbbe4958" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/SharedKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/SharedKey.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,26 +22,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1108" />
+          <entry key="java" value="1233" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1108" />
+          <entry key="JAVA" value="1233" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
-          <entry key="java" value="5" />
+          <entry key="java" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="5" />
+          <entry key="JAVA" value="6" />
         </counts>
       </usages-collector>
     </session>
@@ -69,16 +69,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="60">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/SharedKey.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportCSVWritable.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -127,6 +136,7 @@
         <option value="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightTimeArrival.java" />
         <option value="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportCSVMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/SharedKey.java" />
       </list>
     </option>
   </component>
@@ -214,7 +224,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570616340952" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570616355613" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -286,12 +296,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570260923271</updated>
-      <workItem from="1570260927492" duration="7194000" />
+      <workItem from="1570260927492" duration="7440000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7194000" />
+    <option name="totallyTimeSpent" value="7440000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="310" width="1446" height="727" extended-state="0" />
@@ -365,6 +375,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/SharedKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportCSVWritable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -372,13 +396,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>

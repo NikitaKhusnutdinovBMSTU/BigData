@@ -13,7 +13,7 @@ public class FlightTimeArrivalReducer extends Reducer<SharedKey, Text, Text, Tex
                                                                            */
     @Override
     protected void reduce(SharedKey key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
-        
+
         Iterator iterator = values.iterator();
     }
 }

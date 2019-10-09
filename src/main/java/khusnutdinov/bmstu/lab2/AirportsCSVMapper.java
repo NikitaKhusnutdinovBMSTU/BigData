@@ -15,14 +15,5 @@ public class AirportsCSVMapper extends Mapper<LongWritable, Text, SharedKey, Tex
     public void map(LongWritable longWritable, Text text, OutputCollector<SharedKey, Text> outputCollector, Reporter reporter) throws IOException {
 
     }
-
-    @Override
-    public void close() throws IOException {
-
-    }
-
-    @Override
-    public void configure(JobConf jobConf) {
-
-    }
+    
 }

@@ -7,7 +7,7 @@ import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 public class FlightTimeArrival {
-    private String 
+    private String PlaneCSVPath = "~/Desktop/hadoop/labs/2/664600583_T_ONTIME_sample.csv";
     public static void main(String[] args) throws Exception {
         if (args.length != 1){
             System.err.println("Analysing time arrival of planes\nUsage: <output path>");

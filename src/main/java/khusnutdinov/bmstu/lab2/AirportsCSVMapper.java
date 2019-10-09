@@ -12,8 +12,8 @@ import java.io.IOException;
 
 public class AirportsCSVMapper extends Mapper<LongWritable, Text, SharedKey, Text>{
 
-    
-    public void map(LongWritable key, Text value, Context context) throws IOException {
+
+    public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
 
     }
 

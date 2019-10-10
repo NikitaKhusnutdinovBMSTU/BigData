@@ -46,6 +46,10 @@ public class SharedKey implements WritableComparable<SharedKey> {
         return flag;
     }
 
+    public int compareToFirstPart(SharedKey other){
+        return airportID.compareTo(other.getID());
+    }
+
     public int compareTo(SharedKey other){
         // сравниваем по строкам ID
         int stringCompare = airportID.compareTo(other.getID());

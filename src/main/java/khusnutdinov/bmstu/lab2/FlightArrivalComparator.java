@@ -14,6 +14,6 @@ public class FlightArrivalComparator extends WritableComparator {
         SharedKey sharedKey1 = (SharedKey) a;
         SharedKey sharedKey2 = (SharedKey) b;
 
-        return sharedKey1.compareTo(sharedKey2);
+        return sharedKey1.compareToFirstPart(sharedKey2);
     }
 }

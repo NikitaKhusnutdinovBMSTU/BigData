@@ -23,7 +23,11 @@ public class FlightTimeArrival {
         MultipleInputs.addInputPath(job, new Path(FLIGHTS_CSV_PATH), TextInputFormat.class, FlightsCSVMapper.class);
         MultipleInputs.addInputPath(job, new Path(AIRPORT_CSV_PATH), TextInputFormat.class, AirportsCSVMapper.class);
         FileOutputFormat.setOutputPath(job, new Path(args[0]));
-        // написание компараторов и reduceSideJoin
+        // написание компараторов и partitioner
+        job.setReducerClass(FlightTimeArrivalReducer.class);
+        job.setGroupingComparatorClass(null);
+        job.setPartitionerClass(null);
+        job.setMapOutputKeyClass(SharedKey.class);
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);

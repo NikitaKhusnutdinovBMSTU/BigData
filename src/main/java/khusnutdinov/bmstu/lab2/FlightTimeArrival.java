@@ -25,7 +25,7 @@ public class FlightTimeArrival {
         FileOutputFormat.setOutputPath(job, new Path(args[0]));
         // написание компараторов и partitioner
         job.setReducerClass(FlightTimeArrivalReducer.class);
-        job.setGroupingComparatorClass(null);
+        job.setGroupingComparatorClass(FlightArrivalComparator.class);
         job.setPartitionerClass(null);
         job.setMapOutputKeyClass(SharedKey.class);
 

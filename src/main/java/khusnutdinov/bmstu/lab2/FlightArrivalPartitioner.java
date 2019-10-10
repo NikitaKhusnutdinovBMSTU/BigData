@@ -1,4 +1,7 @@
 package khusnutdinov.bmstu.lab2;
 
-public class FlightArrivalPartitioner {
+import org.apache.hadoop.mapreduce.Partitioner;
+
+public class FlightArrivalPartitioner extends Partitioner {
+    
 }

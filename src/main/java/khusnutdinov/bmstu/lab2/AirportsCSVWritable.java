@@ -10,8 +10,8 @@ public class AirportsCSVWritable {
         String id, nameAirport;
         if(!airportCSV.contains("Description")) {
             divide = airportCSV.indexOf(",");
-            id = airportCSV.substring(2, divide - 2);
-            nameAirport = airportCSV.substring(divide + 3, airportCSV.length() - 2);
+            id = airportCSV.substring(2, divide - 2).replace("\"", "");
+            nameAirport = airportCSV.substring(divide + 2, airportCSV.length() - 1).replace("\"", "");
             airCSVPair = new Pair<>(id, nameAirport);
         }
     }

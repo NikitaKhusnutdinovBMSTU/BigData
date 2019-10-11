@@ -7,7 +7,7 @@ public class AirportsCSVWritable {
 
     public AirportsCSVWritable(String airportCSV){
         int divide = airportCSV.indexOf(",");
-        this.airCSVPair = new Pair<>(airportCSV.substring(0, divide), airportCSV.substring(divide + 1, airportCSV.length() - 1));
+        this.airCSVPair = new Pair<>(airportCSV.substring(0, divide), airportCSV.substring(divide + 2, airportCSV.length() - 1));
     }
 
     public Pair<String, String> getAirportsPair(){

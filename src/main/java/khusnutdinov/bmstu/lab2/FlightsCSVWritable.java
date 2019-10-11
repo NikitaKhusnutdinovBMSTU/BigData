@@ -14,14 +14,16 @@ public class FlightsCSVWritable {
     private Pair<String, String> csvFlightPair;
 
     public FlightsCSVWritable(String flightCSV){
+        String id, delay;
         //избавляемся от первой колонки
         if(flightCSV.length() > 1 && !flightCSV.contains("YEAR")) {
             String[] table = flightCSV.split(",");
             if(table.length < 18){
                 return;
             }
-            //System.out.println(table[DEST_AIRPORT_ID_INDEX] + "======" + table[FLIGHT_DELAY_INDEX]);
-            this.csvFlightPair = new Pair<>(table[DEST_AIRPORT_ID_INDEX], table[FLIGHT_DELAY_INDEX]);
+            id = table[DEST_AIRPORT_ID_INDEX];
+            delay = table[FLIGHT_DELAY_INDEX];
+            this.csvFlightPair = new Pair<>(id, delay);
         }
     }
 

@@ -26,7 +26,7 @@ public class FlightTimeArrivalReducer extends Reducer<SharedKey, Text, Text, Tex
         while(iterator.hasNext()){
 
             String token = iterator.next().toString();
-            if (token.length() == 0){
+            if (token.isEmpty()){
                 continue;
             }
 

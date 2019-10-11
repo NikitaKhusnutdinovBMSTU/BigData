@@ -13,8 +13,8 @@ public class FlightTimeArrival {
     private final static String AIRPORT_CSV_PATH = "~/Desktop/hadoop/labs/2/L_AIRPORT_ID.csv";
 
     public static void main(String[] args) throws Exception {
-        if (args.length != 1){
-            System.err.println("Analysing time arrival of planes\nUsage: <output path>");
+        if (args.length != 3){
+            System.err.println("Analysing time arrival of planes\nUsage: <flight_csv> <airport_csv> <output path>");
             System.exit(-1);
         }
         Job job = Job.getInstance();

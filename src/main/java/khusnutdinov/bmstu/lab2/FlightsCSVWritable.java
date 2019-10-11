@@ -14,7 +14,8 @@ public class FlightsCSVWritable {
     private Pair<String, String> csvFlightPair;
 
     public FlightsCSVWritable(String flightCSV){
-        if(!flightCSV.contains("")) {
+        //избавляемся от первой колонки
+        if(!flightCSV.contains("YEAR")) {
             String[] table = flightCSV.split(",");
             System.out.println(table[DEST_AIRPORT_ID_INDEX] + "======" + table[FLIGHT_DELAY_INDEX]);
             this.csvFlightPair = new Pair<>(table[DEST_AIRPORT_ID_INDEX], table[FLIGHT_DELAY_INDEX]);

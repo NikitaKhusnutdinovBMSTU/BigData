@@ -13,6 +13,8 @@ public class FlightsCSVMapper extends Mapper<LongWritable, Text, SharedKey, Text
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         FlightsCSVWritable flightsCSVWritable = new FlightsCSVWritable(value.toString());
         Pair<String, String> flightsPair = flightsCSVWritable.getFlightsCSVPair();
-        context.write(new SharedKey(flightsPair.getKey(), 1), new Text(flightsPair.getValue()));
+        if(flightsPair != null){
+            context.write(new SharedKey(flightsPair.getKey(), 1), new Text(flightsPair.getValue()));
+        }
     }
 }

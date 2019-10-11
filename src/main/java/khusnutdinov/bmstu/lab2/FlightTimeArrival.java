@@ -22,7 +22,7 @@ public class FlightTimeArrival {
         job.setJobName("Reduce side join");
         MultipleInputs.addInputPath(job, new Path(FLIGHTS_CSV_PATH), TextInputFormat.class, FlightsCSVMapper.class);
         MultipleInputs.addInputPath(job, new Path(AIRPORT_CSV_PATH), TextInputFormat.class, AirportsCSVMapper.class);
-        FileOutputFormat.setOutputPath(job, new Path(args[1]));
+        FileOutputFormat.setOutputPath(job, new Path(args[0]));
 
         job.setReducerClass(FlightTimeArrivalReducer.class);
         job.setGroupingComparatorClass(FlightArrivalComparator.class);

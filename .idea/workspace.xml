@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25311b3f-1c97-4512-b1c3-b516fbbe4958" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightsCSVMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightsCSVMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightArrivalPartitioner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightArrivalPartitioner.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,13 +25,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="14" />
-          <entry key="java" value="5916" />
+          <entry key="java" value="5923" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5916" />
+          <entry key="JAVA" value="5923" />
           <entry key="PLAIN_TEXT" value="14" />
           <entry key="XML" value="2" />
         </counts>
@@ -74,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightArrivalPartitioner.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="55" lean-forward="true" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+              <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,11 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            <state relative-caret-position="300">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -203,10 +202,10 @@
         <option value="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightArrivalComparator.java" />
         <option value="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVWritable.java" />
         <option value="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightsCSVWritable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightArrivalPartitioner.java" />
         <option value="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightTimeArrivalReducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightsCSVMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightArrivalPartitioner.java" />
       </list>
     </option>
   </component>
@@ -294,7 +293,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570828794688" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570828874126" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -367,12 +366,12 @@
       <option name="presentableId" value="Default" />
       <updated>1570260923271</updated>
       <workItem from="1570260927492" duration="18369000" />
-      <workItem from="1570823282484" duration="5142000" />
+      <workItem from="1570823282484" duration="5222000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23511000" />
+    <option name="totallyTimeSpent" value="23591000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="31" y="115" width="1280" height="727" extended-state="0" />
@@ -473,16 +472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightArrivalPartitioner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="55" lean-forward="true" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVWritable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -552,8 +541,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightArrivalPartitioner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

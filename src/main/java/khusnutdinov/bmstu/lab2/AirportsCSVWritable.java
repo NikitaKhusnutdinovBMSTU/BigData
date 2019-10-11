@@ -16,7 +16,7 @@ public class AirportsCSVWritable {
         }
     }
 
-    public Pair<String, String> getAirportsPair() {
+    public Pair<String, String> getAirportsCSVPair() {
         return airCSVPair;
     }
 

@@ -1,2 +1,10 @@
 /Users/Apple/Desktop/hadoopProjectLab2/src/main/java/testClass.java
-/Users/Apple/Desktop/hadoopProjectLab2/src/main/java/FlightTimeArrival.java
+/Users/Apple/Desktop/hadoopProjectLab2/src/main/java/khusnutdinov/bmstu/lab2/SharedKey.java
+/Users/Apple/Desktop/hadoopProjectLab2/src/main/java/khusnutdinov/bmstu/lab2/FlightTimeArrivalReducer.java
+/Users/Apple/Desktop/hadoopProjectLab2/src/main/java/khusnutdinov/bmstu/lab2/FlightArrivalPartitioner.java
+/Users/Apple/Desktop/hadoopProjectLab2/src/main/java/khusnutdinov/bmstu/lab2/FlightsCSVMapper.java
+/Users/Apple/Desktop/hadoopProjectLab2/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVMapper.java
+/Users/Apple/Desktop/hadoopProjectLab2/src/main/java/khusnutdinov/bmstu/lab2/FlightTimeArrival.java
+/Users/Apple/Desktop/hadoopProjectLab2/src/main/java/khusnutdinov/bmstu/lab2/FlightsCSVWritable.java
+/Users/Apple/Desktop/hadoopProjectLab2/src/main/java/khusnutdinov/bmstu/lab2/FlightArrivalComparator.java
+/Users/Apple/Desktop/hadoopProjectLab2/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVWritable.java

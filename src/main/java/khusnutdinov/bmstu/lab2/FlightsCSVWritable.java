@@ -14,7 +14,7 @@ public class FlightsCSVWritable {
     private Pair<String, String> csvFlightPair;
 
     public FlightsCSVWritable(String flightCSV){
-       String[] table = flightCSV.split(" ");
+       String[] table = flightCSV.split(",");
        this.csvFlightPair = new Pair<>(table[DEST_AIRPORT_ID_INDEX], table[FLIGHT_DELAY_INDEX]);
     }
 

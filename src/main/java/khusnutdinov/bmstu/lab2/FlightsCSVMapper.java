@@ -9,6 +9,7 @@ import java.io.IOException;
 
 
 public class FlightsCSVMapper extends Mapper<LongWritable, Text, SharedKey, Text> {
+
     @Override
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         FlightsCSVWritable flightsCSVWritable = new FlightsCSVWritable(value.toString());

@@ -12,7 +12,7 @@ public class AirportsCSVWritable {
             divide = airportCSV.indexOf(",");
             id = airportCSV.substring(0, divide);
             nameAirport = airportCSV.substring(divide + 2, airportCSV.length() - 1);
-            this.airCSVPair = new Pair<>(id, nameAirport);
+            airCSVPair = new Pair<>(id, nameAirport);
         }
     }
 

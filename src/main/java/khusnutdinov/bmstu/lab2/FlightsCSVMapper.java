@@ -4,9 +4,7 @@ import javafx.util.Pair;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
-
 import java.io.IOException;
-import java.sql.SQLOutput;
 
 
 public class FlightsCSVMapper extends Mapper<LongWritable, Text, SharedKey, Text> {

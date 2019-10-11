@@ -6,9 +6,13 @@ public class AirportsCSVWritable {
     private Pair<String, String> airCSVPair;
 
     public AirportsCSVWritable(String airportCSV) {
+        int divide;
+        String id, nameAirport;
         if(!airportCSV.contains("Description")) {
-            int divide = airportCSV.indexOf(",");
-            this.airCSVPair = new Pair<>(airportCSV.substring(0, divide), airportCSV.substring(divide + 2, airportCSV.length() - 1));
+            divide = airportCSV.indexOf(",");
+            id = airportCSV.substring(0, divide);
+            nameAirport = airportCSV.substring(divide + 2, airportCSV.length() - 1);
+            this.airCSVPair = new Pair<>(id, nameAirport);
         }
     }
 

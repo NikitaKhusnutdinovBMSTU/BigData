@@ -14,9 +14,11 @@ public class FlightsCSVWritable {
     private Pair<String, String> csvFlightPair;
 
     public FlightsCSVWritable(String flightCSV){
-       String[] table = flightCSV.split(",");
-       System.out.println(table[DEST_AIRPORT_ID_INDEX] + "======" + table[FLIGHT_DELAY_INDEX]);
-       this.csvFlightPair = new Pair<>(table[DEST_AIRPORT_ID_INDEX], table[FLIGHT_DELAY_INDEX]);
+        if(!flightCSV.contains("")) {
+            String[] table = flightCSV.split(",");
+            System.out.println(table[DEST_AIRPORT_ID_INDEX] + "======" + table[FLIGHT_DELAY_INDEX]);
+            this.csvFlightPair = new Pair<>(table[DEST_AIRPORT_ID_INDEX], table[FLIGHT_DELAY_INDEX]);
+        }
     }
 
     public Pair<String, String> getFlightsCSVPair(){

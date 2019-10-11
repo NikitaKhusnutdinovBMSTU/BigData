@@ -10,6 +10,7 @@ public class FlightArrivalComparator extends WritableComparator {
         super(SharedKey.class, true);
     }
 
+    @Override
     public int compare(WritableComparable a, WritableComparable b){
         SharedKey sharedKey1 = (SharedKey) a;
         SharedKey sharedKey2 = (SharedKey) b;

@@ -9,8 +9,8 @@ import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 public class FlightTimeArrival {
-    private final static String FLIGHTS_CSV_PATH = "~/Desktop/hadoop/labs/2/664600583_T_ONTIME_sample.csv";
-    private final static String AIRPORT_CSV_PATH = "~/Desktop/hadoop/labs/2/L_AIRPORT_ID.csv";
+    private final static String FLIGHTS_CSV_PATH = "664600583_T_ONTIME_sample.csv";
+    private final static String AIRPORT_CSV_PATH = "L_AIRPORT_ID.csv";
 
     public static void main(String[] args) throws Exception {
         if (args.length != 3){

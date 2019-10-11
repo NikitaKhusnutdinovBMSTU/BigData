@@ -19,6 +19,7 @@ public class FlightTimeArrivalReducer extends Reducer<SharedKey, Text, Text, Tex
         int counter = 0;
         String airportName = iterator.next().toString();
         while(iterator.hasNext()){
+
             String token = iterator.next().toString();
             if (token.length() == 0){
                 continue;
@@ -28,6 +29,8 @@ public class FlightTimeArrivalReducer extends Reducer<SharedKey, Text, Text, Tex
             if (currentDelay == 0.0) {
                 continue;
             }
+
+            counter += 1;
             if(counter == 0 || min > currentDelay){
                 min = currentDelay;
             }
@@ -35,7 +38,6 @@ public class FlightTimeArrivalReducer extends Reducer<SharedKey, Text, Text, Tex
                 max = currentDelay;
             }
             sum += currentDelay;
-            counter++;
         }
         if(counter > 0){
             String infoString = "".concat("[Min: ".concat(min.toString().concat(", ")));

@@ -26,7 +26,7 @@ public class FlightTimeArrival {
         // написание компараторов и partitioner
         job.setReducerClass(FlightTimeArrivalReducer.class);
         job.setGroupingComparatorClass(FlightArrivalComparator.class);
-        job.setPartitionerClass(null);
+        job.setPartitionerClass(FlightArrivalPartitioner.class);
         job.setMapOutputKeyClass(SharedKey.class);
 
         job.setOutputKeyClass(Text.class);

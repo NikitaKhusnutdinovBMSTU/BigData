@@ -11,6 +11,7 @@ public class AirportsCSVMapper extends Mapper<LongWritable, Text, SharedKey, Tex
 
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
+        System.out.println("Airport");
         AirportsCSVWritable airportsCSVWritable = new AirportsCSVWritable(value.toString());
         Pair<String, String> airDatePair = airportsCSVWritable.getAirportsCSVPair();
         if (airDatePair != null) {

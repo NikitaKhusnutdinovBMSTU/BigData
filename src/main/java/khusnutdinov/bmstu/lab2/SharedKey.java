@@ -56,6 +56,6 @@ public class SharedKey implements WritableComparable<SharedKey> {
         int otherFlag = other.getFlag();
         /* если они равны, то тогда сравниваем по флагу,
             иначе отправляем сравнение строк            */
-        return stringCompare == 0 ? Integer.compare(flag, otherFlag) : stringCompare;
+        return stringCompare == 0 && flag == other.getFlag() ? 0 : Integer.compare(flag, other.getFlag());
     }
 }

@@ -30,11 +30,11 @@ public class FlightTimeArrivalReducer extends Reducer<SharedKey, Text, Text, Tex
             if (token.isEmpty()){
                 continue;
             }
-            try {
+            //try {
                 currentDelay = new Double(token);
-            }catch (NumberFormatException ex){
-                continue;
-            }
+            //}catch (NumberFormatException ex){
+            //    continue;
+            //}
             if (currentDelay == 0.0) {
                 continue;
             }

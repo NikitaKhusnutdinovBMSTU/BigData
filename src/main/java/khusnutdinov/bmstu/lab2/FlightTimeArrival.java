@@ -14,7 +14,7 @@ public class FlightTimeArrival {
 
     public static void main(String[] args) throws Exception {
         if (args.length != 1){
-            System.err.println("Analysing time arrival of planes\nUsage: <flight_csv> <airport_csv> <output path>");
+            System.err.println("Analysing time arrival of planes\nUsage: <output path>");
             System.exit(-1);
         }
         Job job = Job.getInstance();

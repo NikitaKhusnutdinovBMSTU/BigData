@@ -18,7 +18,10 @@ public class FlightsCSVWritable {
         //избавляемся от первой колонки
         if(flightCSV.length() > 1 && !flightCSV.contains("YEAR")) {
             String[] table = flightCSV.split(",");
-            if(table.length < 18){
+            if(table.length >= 18  && table[FLIGHT_DELAY_INDEX] == null || table[FLIGHT_DELAY_INDEX].equals("")){
+                    return;
+            }
+            if(table.length < 1){
                 return;
             }
             id = table[DEST_AIRPORT_ID_INDEX];

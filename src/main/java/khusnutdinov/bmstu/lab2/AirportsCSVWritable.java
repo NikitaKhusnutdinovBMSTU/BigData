@@ -12,6 +12,7 @@ public class AirportsCSVWritable {
             divide = airportCSV.indexOf(",");
             id = airportCSV.substring(2, divide - 2).replace("\"", "");
             nameAirport = airportCSV.substring(divide + 2, airportCSV.length() - 1).replace("\"", "");
+            System.out.println( "\n***********\nName of airport is : " + nameAirport + "************\n");
             airCSVPair = new Pair<>(id, nameAirport);
         }
     }

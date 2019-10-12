@@ -22,7 +22,6 @@ public class FlightTimeArrivalReducer extends Reducer<SharedKey, Text, Text, Tex
         Iterator iterator = values.iterator();
         Double min = Double.MAX_VALUE, max = Double.MIN_VALUE, currentDelay, sum = 0.0;
         int counter = 0;
-        iterator.next();
         String airportName = iterator.next().toString();
         log.info(airportName);
         while(iterator.hasNext()){
@@ -31,11 +30,11 @@ public class FlightTimeArrivalReducer extends Reducer<SharedKey, Text, Text, Tex
             if (token.isEmpty()){
                 continue;
             }
-            //try {
+            try {
                 currentDelay = new Double(token);
-            //}catch (NumberFormatException ex){
-            //    continue;
-            //}
+            }catch (NumberFormatException ex){
+                continue;
+            }
             if (currentDelay == 0.0) {
                 continue;
             }

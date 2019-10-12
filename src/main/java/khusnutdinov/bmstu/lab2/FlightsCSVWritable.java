@@ -31,6 +31,7 @@ public class FlightsCSVWritable implements Writable{
         return csvFlightPair;
     }
 
+
     public String getDestAirportID(){
         return csvFlightPair.getKey();
     }
@@ -41,23 +42,12 @@ public class FlightsCSVWritable implements Writable{
 
     @Override
     public void write(DataOutput dataOutput) throws IOException {
-        dataOutput.writeChars(csvFlightPair.getKey());
-        dataOutput.writeChars(csvFlightPair.getValue());
+        dataOutput.writeUTF(csvFlightPair.getKey());
+        dataOutput.writeUTF(csvFlightPair.getValue());
     }
 
     @Override
     public void readFields(DataInput dataInput) throws IOException {
-        String flightCSV = dataInput.readLine();
-        String id, delay;
-        //избавляемся от первой колонки
-        if(flightCSV.length() > 1 && !flightCSV.contains("YEAR")) {
-            String[] table = flightCSV.split(",");
-            if(table.length < 18){
-                return;
-            }
-            id = table[DEST_AIRPORT_ID_INDEX];
-            delay = table[FLIGHT_DELAY_INDEX];
-            this.csvFlightPair = new Pair<>(id, delay);
-        }
+        this.csvFlightPair = new Pair<>(dataInput.readUTF(), dataInput.readUTF());
     }
 }

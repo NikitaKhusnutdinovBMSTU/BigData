@@ -24,6 +24,7 @@ public class FlightsCSVWritable {
             if(table.length < 1){
                 return;
             }
+            System.out.print("AHAHAHAH");
             id = table[DEST_AIRPORT_ID_INDEX];
             delay = table[FLIGHT_DELAY_INDEX];
             this.csvFlightPair = new Pair<>(id, delay);

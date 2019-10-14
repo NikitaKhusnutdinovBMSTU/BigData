@@ -14,7 +14,7 @@ public class FlightsCSVMapper extends Mapper<LongWritable, Text, SharedKey, Text
         FlightsCSVWritable flightsCSVWritable = new FlightsCSVWritable(value.toString());
         Pair<String, String> flightsPair = flightsCSVWritable.getFlightsCSVPair();
         try {
-            context.write(new SharedKey(flightsPair.getKey(), 1), new Text(flightsPair.getValue()));
+            context.write(new SharedKey(flightsPair.getKey(), 0), new Text(flightsPair.getValue()));
         }catch (NullPointerException e){
             //
         }

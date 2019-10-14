@@ -52,12 +52,12 @@ public class SharedKey implements WritableComparable<SharedKey> {
 
     public int compareTo(SharedKey other){
         // сравниваем по строкам ID
-        int stringCompare = airportID.compareTo(other.getAirportID());
+        int airportIDCompare = airportID.compareTo(other.getAirportID());
         int otherFlag = other.getFlag();
-        if(stringCompare == 0){
+        if(airportIDCompare == 0){
             return flag - otherFlag;
         }
-        return stringCompare;
+        return airportIDCompare;
         /* если они равны, то тогда сравниваем по флагу,
             иначе отправляем сравнение строк            */
     }

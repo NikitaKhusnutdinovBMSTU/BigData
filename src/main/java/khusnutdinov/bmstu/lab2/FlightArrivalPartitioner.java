@@ -9,7 +9,7 @@ public class FlightArrivalPartitioner extends Partitioner<SharedKey, Text> {
     }
 
     public int getPartition(SharedKey key, Text value, int numReduceTasks){
-        int airportID = new Integer(key.getAirportID());
+        int airportID = key.getAirportID().parse;
         return airportID % numReduceTasks;
     }
 }

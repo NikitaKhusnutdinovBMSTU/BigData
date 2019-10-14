@@ -13,7 +13,7 @@ public class FlightTimeArrival {
     private final static String AIRPORT_CSV_PATH = "L_AIRPORT_ID.csv";
 
     public static void main(String[] args) throws Exception {
-        if (args.length != 1){
+        if (args.length != 0){
             System.err.println("Analysing time arrival of planes\nUsage: <output path>");
             System.exit(-1);
         }

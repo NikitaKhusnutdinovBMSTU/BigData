@@ -1,4 +1,10 @@
-khusnutdinov/bmstu/lab2/FlightTimeArrivalReducer.class
+khusnutdinov/bmstu/lab2/FlightArrivalPartitioner.class
 testClass.class
+khusnutdinov/bmstu/lab2/FlightsCSVWritable.class
+khusnutdinov/bmstu/lab2/AirportsCSVWritable.class
+khusnutdinov/bmstu/lab2/FlightsCSVMapper.class
 khusnutdinov/bmstu/lab2/AirportsCSVMapper.class
+khusnutdinov/bmstu/lab2/FlightArrivalComparator.class
 khusnutdinov/bmstu/lab2/SharedKey.class
+khusnutdinov/bmstu/lab2/FlightTimeArrivalReducer.class
+khusnutdinov/bmstu/lab2/FlightTimeArrival.class

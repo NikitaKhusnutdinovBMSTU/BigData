@@ -16,6 +16,7 @@ public class FlightsCSVWritable {
 
     public FlightsCSVWritable(String flightCSV){
         String id, delay;
+        System.out.println(flightCSV);
         //избавляемся от первой колонки
         if(flightCSV.length() > 1 && !flightCSV.contains("YEAR")) {
             String[] table = flightCSV.split(",");

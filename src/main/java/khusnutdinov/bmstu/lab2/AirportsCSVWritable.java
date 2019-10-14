@@ -13,7 +13,6 @@ public class AirportsCSVWritable{
             divide = airportCSV.indexOf(",");
             id = airportCSV.substring(0, divide);
             nameAirport = airportCSV.substring(divide + 2, airportCSV.length() - 1);
-            //System.out.println( "\n***********\nName of airport is : " + nameAirport + "************\n");
             if(!id.isEmpty() && !nameAirport.isEmpty()) {
                 airCSVPair = new Pair<>(id, nameAirport);
             }

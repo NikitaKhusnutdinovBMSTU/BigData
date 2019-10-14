@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25311b3f-1c97-4512-b1c3-b516fbbe4958" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightsCSVMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightsCSVMapper.java" afterDir="false" />
-    </list>
+    <list default="true" id="25311b3f-1c97-4512-b1c3-b516fbbe4958" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -128,8 +125,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightsCSVMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="118" selection-start-line="15" selection-start-column="118" selection-end-line="15" selection-end-column="118" />
+            <state relative-caret-position="270">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -376,16 +373,15 @@
       <updated>1570260923271</updated>
       <workItem from="1570260927492" duration="18369000" />
       <workItem from="1570823282484" duration="10043000" />
-      <workItem from="1570866602579" duration="6283000" />
+      <workItem from="1570866602579" duration="6855000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34695000" />
+    <option name="totallyTimeSpent" value="35267000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="27" y="206" width="1280" height="727" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22051696" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -538,8 +534,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightsCSVMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="118" selection-start-line="15" selection-start-column="118" selection-end-line="15" selection-end-column="118" />
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

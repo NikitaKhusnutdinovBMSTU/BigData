@@ -13,7 +13,7 @@ public class FlightTimeArrival {
     private final static String AIRPORT_CSV_PATH = "L_AIRPORT_ID.csv";
 
     public static void main(String[] args) throws Exception {
-        if (args.length != 0){
+        if (args.length != 1){
             System.err.println("Analysing time arrival of planes\nUsage: <output path>");
             System.exit(-1);
         }
@@ -22,7 +22,7 @@ public class FlightTimeArrival {
         job.setJobName("Reduce side join");
         MultipleInputs.addInputPath(job, new Path(FLIGHTS_CSV_PATH), TextInputFormat.class, FlightsCSVMapper.class);
         MultipleInputs.addInputPath(job, new Path(AIRPORT_CSV_PATH), TextInputFormat.class, AirportsCSVMapper.class);
-        FileOutputFormat.setOutputPath(job, new Path("output"));
+        FileOutputFormat.setOutputPath(job, new Path(args[0]));
 
         job.setReducerClass(FlightTimeArrivalReducer.class);
         job.setGroupingComparatorClass(FlightArrivalComparator.class);

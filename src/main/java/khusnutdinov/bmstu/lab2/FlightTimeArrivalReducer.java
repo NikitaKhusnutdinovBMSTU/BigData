@@ -48,7 +48,7 @@ public class FlightTimeArrivalReducer extends Reducer<SharedKey, Text, Text, Tex
             String infoString = "".concat("[Min: ".concat(min.toString().concat(", ")));
             infoString = infoString.concat("Max: ").concat(max.toString()).concat(", ");
             infoString = infoString.concat("Avg: ").concat(Double.toString(sum/counter).concat("];"));
-            context.write(new Text(airportName + "SMTH"), new Text(infoString));
+            context.write(new Text(airportName + " SMTH"), new Text(infoString));
         }
     }
 }

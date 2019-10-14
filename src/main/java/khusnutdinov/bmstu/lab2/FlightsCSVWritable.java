@@ -6,10 +6,11 @@ import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
-public class FlightsCSVWritable implements Writable{
+public class FlightsCSVWritable {
 
-    private final static int DEST_AIRPORT_ID_INDEX = 14;
-    private final static int FLIGHT_DELAY_INDEX = 17;
+    private static final int DEST_AIRPORT_ID_INDEX = 14;
+    private static final int FLIGHT_DELAY_INDEX = 17;
+    private static final int TOTAL = 18;
 
     private Pair<String, String> csvFlightPair;
 
@@ -18,7 +19,7 @@ public class FlightsCSVWritable implements Writable{
         //избавляемся от первой колонки
         if(flightCSV.length() > 1 && !flightCSV.contains("YEAR")) {
             String[] table = flightCSV.split(",");
-            if(table.length < 18){
+            if(table.length < TOTAL){
                 return;
             }
             id = table[DEST_AIRPORT_ID_INDEX];
@@ -40,14 +41,4 @@ public class FlightsCSVWritable implements Writable{
         return csvFlightPair.getValue();
     }
 
-    @Override
-    public void write(DataOutput dataOutput) throws IOException {
-        dataOutput.writeUTF(csvFlightPair.getKey());
-        dataOutput.writeUTF(csvFlightPair.getValue());
-    }
-
-    @Override
-    public void readFields(DataInput dataInput) throws IOException {
-        this.csvFlightPair = new Pair<>(dataInput.readUTF(), dataInput.readUTF());
-    }
 }

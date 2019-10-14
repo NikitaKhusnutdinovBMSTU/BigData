@@ -1,5 +1,6 @@
 #!/bin/bash
-echo 
+echo
+while [-n "$1"]
 do
 case "$1" in
 -s) echo "******START_ALL_HADOOP_BY_KHUSNUTDINOV******\n" &&

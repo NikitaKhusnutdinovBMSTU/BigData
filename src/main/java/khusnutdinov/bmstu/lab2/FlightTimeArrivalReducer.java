@@ -27,24 +27,20 @@ public class FlightTimeArrivalReducer extends Reducer<SharedKey, Text, Text, Tex
         while(iterator.hasNext()){
 
             String token = iterator.next().toString();
-            if (token.isEmpty()){
+            if (token.length() == 0){
                 continue;
             }
-            try {
-                currentDelay = new Double(token);
-            }catch (NumberFormatException ex){
-                continue;
-            }
+            currentDelay = new Double(token);
             if (currentDelay == 0.0) {
                 continue;
             }
 
             counter += 1;
-            if(counter == 0 || min > currentDelay){
-                min = currentDelay;
-            }
             if(counter == 0 || max < currentDelay){
                 max = currentDelay;
+            }
+            if(counter == 0 || min > currentDelay){
+                min = currentDelay;
             }
             sum += currentDelay;
         }
@@ -52,7 +48,7 @@ public class FlightTimeArrivalReducer extends Reducer<SharedKey, Text, Text, Tex
             String infoString = "".concat("[Min: ".concat(min.toString().concat(", ")));
             infoString = infoString.concat("Max: ").concat(max.toString()).concat(", ");
             infoString = infoString.concat("Avg: ").concat(Double.toString(sum/counter).concat("];"));
-            context.write(new Text(airportName), new Text(infoString));
+            context.write(new Text(airportName + "SMTH"), new Text(infoString));
         }
     }
 }

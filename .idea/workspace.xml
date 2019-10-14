@@ -88,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightArrivalComparator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+              <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#269#270#0" expanded="true" />
@@ -126,7 +126,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightsCSVMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -138,7 +138,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/SharedKey.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="544">
-              <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+              <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1111#1112#0" expanded="true" />
@@ -373,12 +373,12 @@
       <updated>1570260923271</updated>
       <workItem from="1570260927492" duration="18369000" />
       <workItem from="1570823282484" duration="10043000" />
-      <workItem from="1570866602579" duration="6855000" />
+      <workItem from="1570866602579" duration="7452000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35267000" />
+    <option name="totallyTimeSpent" value="35864000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="27" y="206" width="1280" height="727" extended-state="0" />
@@ -441,7 +441,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/SharedKey.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
-          <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1111#1112#0" expanded="true" />
@@ -503,7 +503,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightArrivalComparator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#269#270#0" expanded="true" />
@@ -535,7 +535,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightsCSVMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -14,7 +14,7 @@ public class FlightTimeArrivalReducer extends Reducer<SharedKey, Text, Text, Tex
         среднее/минимальное/максимальное время задержки
                                                                            */
 
-    public static final Log log = LogFactory.getLog(FlightTimeArrivalReducer.class);
+    //public static final Log log = LogFactory.getLog(FlightTimeArrivalReducer.class);
 
     @Override
     protected void reduce(SharedKey key, Iterable<Text> values, Context context) throws IOException, InterruptedException {

@@ -25,7 +25,9 @@ public class FlightsCSVWritable {
             }
             id = table[DEST_AIRPORT_ID_INDEX];
             delay = table[FLIGHT_DELAY_INDEX];
-            this.csvFlightPair = new Pair<>(id, delay);
+            if(!id.isEmpty() && !delay.isEmpty()) {
+                this.csvFlightPair = new Pair<>(id, delay);
+            }
         }
     }
 

@@ -38,7 +38,7 @@ public class SharedKey implements WritableComparable<SharedKey> {
         airportID = stringLine.substring(0, sizeLine - 1);
     }
 
-    public String getID(){
+    public String getAirportID(){
         return airportID;
     }
 
@@ -47,15 +47,18 @@ public class SharedKey implements WritableComparable<SharedKey> {
     }
 
     public int compareToFirstPart(SharedKey other){
-        return airportID.compareTo(other.getID());
+        return airportID.compareTo(other.getAirportID());
     }
 
     public int compareTo(SharedKey other){
         // сравниваем по строкам ID
-        int stringCompare = airportID.compareTo(other.getID());
+        int stringCompare = airportID.compareTo(other.getAirportID());
         int otherFlag = other.getFlag();
+        if(stringCompare == 0){
+            return flag - otherFlag;
+        }
+        return stringCompare;
         /* если они равны, то тогда сравниваем по флагу,
             иначе отправляем сравнение строк            */
-        return stringCompare == 0 && flag == other.getFlag() ? 0 : Integer.compare(flag, other.getFlag());
     }
 }

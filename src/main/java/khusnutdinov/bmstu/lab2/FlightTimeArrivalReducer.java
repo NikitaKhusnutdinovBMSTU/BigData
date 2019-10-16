@@ -14,14 +14,12 @@ public class FlightTimeArrivalReducer extends Reducer<SharedKey, Text, Text, Tex
         среднее/минимальное/максимальное время задержки
                                                                            */
 
-    //public static final Log log = LogFactory.getLog(FlightTimeArrivalReducer.class);
 
     @Override
     protected void reduce(SharedKey key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
-
-        Iterator iterator = values.iterator();
-        Double min = Double.MAX_VALUE, max = Double.MIN_VALUE, currentDelay, sum = 0.0;
         int counter = 0;
+        Double min = Double.MAX_VALUE, max = Double.MIN_VALUE, currentDelay, sum = 0.0;
+        Iterator iterator = values.iterator();
         String airportName = iterator.next().toString();
 
         while(iterator.hasNext()){

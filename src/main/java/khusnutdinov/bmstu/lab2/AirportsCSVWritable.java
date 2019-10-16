@@ -4,11 +4,13 @@ import javafx.util.Pair;
 
 
 public class AirportsCSVWritable{
+
     private Pair<String, String> airCSVPair;
 
     public AirportsCSVWritable(String airportCSV) {
         int divide;
         String airportID, nameAirport;
+
         if(!airportCSV.contains("Description")) {
             divide = airportCSV.indexOf(",");
             // troubles with parse ""STRING"" -> added + 1 for each substring pos

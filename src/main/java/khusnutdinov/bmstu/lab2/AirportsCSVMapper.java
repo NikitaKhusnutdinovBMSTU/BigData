@@ -16,7 +16,7 @@ public class AirportsCSVMapper extends Mapper<LongWritable, Text, SharedKey, Tex
         try {
             context.write(new SharedKey(airDatePair.getKey(), 0), new Text(airDatePair.getValue()));
         }catch (NullPointerException e){
-
+            System.out.println(e);
         }
     }
 }

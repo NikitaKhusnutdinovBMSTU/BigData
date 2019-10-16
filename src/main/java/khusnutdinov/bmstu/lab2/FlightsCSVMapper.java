@@ -16,7 +16,7 @@ public class FlightsCSVMapper extends Mapper<LongWritable, Text, SharedKey, Text
         try {
             context.write(new SharedKey(flightsPair.getKey(), 1), new Text(flightsPair.getValue()));
         }catch (NullPointerException e){
-            //
+            System.out.println(e);
         }
     }
 }

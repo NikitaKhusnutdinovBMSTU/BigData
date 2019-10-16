@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25311b3f-1c97-4512-b1c3-b516fbbe4958" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVWritable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVWritable.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -108,11 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
+            <state relative-caret-position="210">
+              <caret line="14" column="72" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -174,7 +175,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVWritable.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
@@ -208,11 +209,11 @@
         <option value="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightsCSVWritable.java" />
         <option value="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightTimeArrivalReducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightArrivalComparator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightsCSVMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/FlightArrivalPartitioner.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVWritable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVMapper.java" />
       </list>
     </option>
   </component>
@@ -394,12 +395,12 @@
       <workItem from="1570260927492" duration="18369000" />
       <workItem from="1570823282484" duration="10043000" />
       <workItem from="1570866602579" duration="12854000" />
-      <workItem from="1571260579487" duration="1013000" />
+      <workItem from="1571260579487" duration="1022000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42279000" />
+    <option name="totallyTimeSpent" value="42288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="24" width="1280" height="727" extended-state="6" />
@@ -485,16 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
           <caret line="92" selection-start-line="92" selection-end-line="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -587,6 +578,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/khusnutdinov/bmstu/lab2/AirportsCSVMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="72" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

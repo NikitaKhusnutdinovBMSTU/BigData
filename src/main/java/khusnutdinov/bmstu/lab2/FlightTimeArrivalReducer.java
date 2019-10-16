@@ -25,12 +25,13 @@ public class FlightTimeArrivalReducer extends Reducer<SharedKey, Text, Text, Tex
             if (token.length() == 0){
                 continue;
             }
+
             currentDelay = new Double(token);
+            // not interesting case
             if (currentDelay == 0.0) {
                 continue;
             }
 
-            counter += 1;
             if(counter == 0 || max < currentDelay){
                 max = currentDelay;
             }
@@ -38,6 +39,7 @@ public class FlightTimeArrivalReducer extends Reducer<SharedKey, Text, Text, Tex
                 min = currentDelay;
             }
             sum += currentDelay;
+            counter += 1;
         }
         if(counter > 0){
             String infoString = "".concat("[Min: ".concat(min.toString().concat(", ")));

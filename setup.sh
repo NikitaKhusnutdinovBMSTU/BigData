@@ -8,7 +8,7 @@ stop-yarn.sh && stop-dfs.sh && start-dfs.sh &&
 start-yarn.sh && 
 echo "******STARTING_INITIALISE******" && 
 mvn package && hadoop jar target/*.jar khusnutdinov.bmstu.lab2.FlightTimeArrival output && 
-hadoop fs -copyToLocal output && cd output && echo "******HERE_IS_THE_OUTPUT******" && cat * > solution.txt && 
+hadoop fs -copyToLocal output && cd output && echo "******OUTPUT_IN_SOLUTION.TXT******" && cat * > solution.txt && 
 mv solution.txt ../ && cd .. && rm -R ./output && hadoop fs -rm -R output;;
 -d)rm -R output; hadoop fs -rm -R output; echo "******START_HADOOP_BY_KHUSNUTDINOV******" && echo "******STARTING_INITIALISE******" && mvn package && hadoop jar target/Khusnutdinov.BMSTU-1.0-SNAPSHOT.jar khusnutdinov.bmstu.lab2.FlightTimeArrival output && hadoop fs -copyToLocal output && cd output && echo "******OUTPUT_IN_SOLUTION.TXT******" && cat * > solution.txt && 
 mv solution.txt ../ && cd .. && rm -R ./output && hadoop fs -rm -R output;;

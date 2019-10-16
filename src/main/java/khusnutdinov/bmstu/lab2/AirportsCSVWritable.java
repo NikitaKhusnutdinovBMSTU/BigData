@@ -8,18 +8,20 @@ public class AirportsCSVWritable{
 
     public AirportsCSVWritable(String airportCSV) {
         int divide;
-        String id, nameAirport;
+        String airportID, nameAirport;
         if(!airportCSV.contains("Description")) {
             divide = airportCSV.indexOf(",");
-            id = airportCSV.substring(1, divide - 1);
+            // troubles with parse ""STRING"" -> added + 1 for each substring pos
+            airportID = airportCSV.substring(1, divide - 1);
             nameAirport = airportCSV.substring(divide + 2, airportCSV.length() - 1);
-            if(!id.isEmpty() && !nameAirport.isEmpty()) {
-                airCSVPair = new Pair<>(id, nameAirport);
+            if(!airportID.isEmpty() && !nameAirport.isEmpty()) {
+                airCSVPair = new Pair<>(airportID, nameAirport);
             }
         }
     }
 
-    public Pair<String, String> getAirportsCSVPair() {
+    public Pair<String, String> getAirCSVPair() {
+
         return airCSVPair;
     }
 

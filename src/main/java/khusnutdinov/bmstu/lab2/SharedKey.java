@@ -13,7 +13,7 @@ public class SharedKey implements WritableComparable<SharedKey> {
     private String airportID;
     private int flag;
 
-    //
+    // default init
     public SharedKey() {
         this.airportID = "null";
         this.flag = -1;

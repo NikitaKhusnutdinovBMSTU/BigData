@@ -44,7 +44,7 @@ public class FlightTimeArrivalReducer extends Reducer<SharedKey, Text, Text, Tex
         if(counter > 0){
             String infoString = "".concat("[Min: ".concat(min.toString().concat(", ")));
             infoString = infoString.concat("Max: ").concat(max.toString()).concat(", ");
-            infoString = infoString.concat("Avg: ").concat((Math.round(sum/counter)).concat("];"));
+            infoString = infoString.concat("Avg: ").concat(new Double(Math.round(100.0 * (sum/counter)) / 100.0).toString().concat("];"));
             context.write(new Text(airportName), new Text(infoString));
         }
     }

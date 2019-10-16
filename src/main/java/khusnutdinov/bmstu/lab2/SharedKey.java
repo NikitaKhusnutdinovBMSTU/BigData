@@ -43,10 +43,12 @@ public class SharedKey implements WritableComparable<SharedKey> {
     }
 
     public int getFlag(){
+
         return flag;
     }
 
     public int compareToFirstPart(SharedKey other){
+
         return airportID.compareTo(other.getAirportID());
     }
 
@@ -54,11 +56,10 @@ public class SharedKey implements WritableComparable<SharedKey> {
         // сравниваем по строкам ID
         int airportIDCompare = airportID.compareTo(other.getAirportID());
         int otherFlag = other.getFlag();
-        if(airportIDCompare == 0){
-            return flag - otherFlag;
-        }
-        return airportIDCompare;
-        /* если они равны, то тогда сравниваем по флагу,
-            иначе отправляем сравнение строк            */
+//        if(airportIDCompare == 0){
+//            return flag - otherFlag;
+//        }
+//        return airportIDCompare;
+        return airportIDCompare == 0 ? flag - otherFlag : airportIDCompare;
     }
 }

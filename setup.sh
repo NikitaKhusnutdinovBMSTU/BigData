@@ -3,7 +3,7 @@ echo
 while [ -n "$1" ]
 do
 case "$1" in
--s) hadoop fs -rm -R output; echo "******START_ALL_HADOOP_BY_KHUSNUTDINOV******" &&
+-s)rm -R output; hadoop fs -rm -R output; echo "******START_ALL_HADOOP_BY_KHUSNUTDINOV******" &&
 stop-yarn.sh && stop-dfs.sh && start-dfs.sh && 
 start-yarn.sh && 
 echo "******STARTING_INITIALISE******" && 
